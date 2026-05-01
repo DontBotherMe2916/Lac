@@ -5,16 +5,16 @@
   <title>Lạc Lạc Lạc💞</title>
 
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💖</text></svg>">
-</head>
 <style>
 body{
     font-family:Arial, sans-serif;
     background:linear-gradient(135deg,#a1c4fd,#fbc2eb);
     display:flex;
     justify-content:center;
-    align-items:center;
-    height:100vh;
+    align-items:flex-start; /* đổi từ center → start */
+    min-height:100vh; /* đổi từ height → min-height */
     margin:0;
+    padding:20px 0;
 }
 
 .container{
@@ -23,8 +23,10 @@ body{
     border-radius:20px;
     box-shadow:0 10px 30px rgba(0,0,0,0.15);
     width:650px;
+    max-height:90vh; /* giới hạn chiều cao */
+    overflow-y:auto; /* thêm scroll */
 }
-
+  
 h2{
     text-align:center;
     color:#ff6fa5;
@@ -53,7 +55,14 @@ h2{
 .item span{
     margin-right:8px;
 }
+.container::-webkit-scrollbar{
+    width:6px;
+}
 
+.container::-webkit-scrollbar-thumb{
+    background:#ff9acb;
+    border-radius:10px;
+}
 </style>
 </head>
 
