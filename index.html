@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Favorite Things</title>
+<style>
+body{
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#a1c4fd,#fbc2eb);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    margin:0;
+}
+
+.container{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+    width:420px;
+}
+
+h2{
+    text-align:center;
+    color:#ff6fa5;
+    margin-bottom:20px;
+}
+
+.list{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.item{
+    background:linear-gradient(135deg,#e0f0ff,#ffe0f0);
+    padding:12px 15px;
+    border-radius:12px;
+    transition:0.3s;
+    cursor:pointer;
+}
+
+.item:hover{
+    transform:translateY(-3px) scale(1.02);
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+.item span{
+    margin-right:8px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>💙 Những thứ mình thích 💕</h2>
+
+    <div class="list">
+        <div class="item"><span>😻</span>Đặng Phương Lan và những thứ liên quan</div>
+        <div class="item"><span>🥹</span>Khum bao giờ đủ áo khoác</div>
+        <div class="item"><span>🐼</span>Gấu trúc đỏ và những thứ liên quan</div>
+        <div class="item"><span>🦈</span>Dép cute như cá mập, khủng long, gấu trúc đỏ...</div>
+        <div class="item"><span>🧶</span>Nón len hoặc khăn đan tay</div>
+        <div class="item"><span>🎁</span>Đồ handmade by lạc lạc lạc</div>
+        <div class="item"><span>📸</span>Sổ để ảnh + ảnh xinh xinh</div>
+        <div class="item"><span>💖</span>Bất kì thứ gì người yêu tặng</div>
+        <div class="item"><span>🥺</span>Hmmmmm bí òi</div>
+    </div>
+</div>
+
+</body>
+</html>
